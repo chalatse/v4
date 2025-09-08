@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Navify - Welcome</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #137fec;
+      }
+      .bg-dots {
+        background-image: radial-gradient(circle, #283039 1px, transparent 1px);
+        background-size: 1rem 1rem;
+      }
+    </style>
+</head>
+<body class="bg-[#111418] font-['Space_Grotesk',_'Noto_Sans',_sans-serif] text-white">
+<div class="relative flex min-h-screen flex-col overflow-hidden">
+<div class="absolute inset-0 bg-dots"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#111418] via-[#111418] to-transparent"></div>
+<div class="relative z-10 flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap px-6 sm:px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C14.0589 4 6 12.0589 6 22C6 29.2933 10.5121 35.5398 17 38.3333V44L24 40L31 44V38.3333C37.4879 35.5398 42 29.2933 42 22C42 12.0589 33.9411 4 24 4ZM24 28C20.6863 28 18 25.3137 18 22C18 18.6863 20.6863 16 24 16C27.3137 16 30 18.6863 30 22C30 25.3137 27.3137 28 24 28Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold">Navify</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm">
+<a class="font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Navigation</a>
+<a class="font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Petrol Stations</a>
+<a class="font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Chatbot</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block text-sm font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Log In</a>
+<a class="flex items-center justify-center rounded-lg bg-[var(--primary-color)] px-4 py-2 text-sm font-bold transition-transform hover:scale-105" href="#">Sign Up</a>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-2xl"> menu </span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center px-6 py-16 sm:py-24">
+<div class="w-full max-w-2xl text-center">
+<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              The smartest way to <span class="text-[var(--primary-color)]">navigate</span> your world.
+            </h1>
+<p class="mx-auto mt-6 max-w-xl text-lg text-gray-300 md:text-xl">
+              Navify provides seamless navigation, real-time petrol prices, and an intelligent chatbot to assist you on every journey.
+            </p>
+<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+<a class="flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[var(--primary-color)] px-8 py-3 text-base font-bold text-white transition-transform hover:scale-105" href="#">
+<span>Get Started for Free</span>
+<span class="material-symbols-outlined"> arrow_forward </span>
+</a>
+<a class="flex w-full sm:w-auto items-center justify-center rounded-lg border border-gray-700 bg-gray-800/50 px-8 py-3 text-base font-medium text-white transition-colors hover:bg-gray-800" href="#">
+<span>Talk to Sales</span>
+</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
