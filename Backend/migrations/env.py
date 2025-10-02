@@ -1,8 +1,8 @@
 from logging.config import fileConfig
 from sqlalchemy import create_engine, pool
 from alembic import context
-from app.database import DATABASE_URL, Base  # <- make sure Base is imported
-from app import models  # <- import all your models so Alembic knows about them
+from app.database import DATABASE_URL, Base  
+from app import models  
 
 # Alembic Config object
 config = context.config

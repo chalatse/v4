@@ -7,21 +7,25 @@ class UserCreate(BaseModel):
     password: str
 
 class UserResponse(BaseModel):
-    id: int
+    id:int
+    EmailStr: EmailStr
+    google_id: str | None = None
+    class Config:
+        orm_mode = True
+
+# ----- Google User ------
+class GoogleUser(BaseModel):
     email: EmailStr
-
-    model_config = {"from_attributes": True}  # replaces orm_mode
-
+    sub: str
 
 # ----- Petrol Station -----
 class PetrolStationBase(BaseModel):
     name: str
-    location: str  # You can change this to latitude/longitude if needed
+    location: str  
     price_per_litre: float
 
 class PetrolStationResponse(PetrolStationBase):
     id: int
-
     model_config = {"from_attributes": True}
 
 
@@ -43,8 +47,7 @@ class Location(LocationBase):
 
 # ----- Traffic Report -----
 class TrafficReportBase(BaseModel):
-    type: str  # e.g., "accident", "roadblock"
-    latitude: float
+    type: str  
     longitude: float
 
 class TrafficReportCreate(TrafficReportBase):
@@ -54,7 +57,6 @@ class TrafficReport(TrafficReportBase):
     id: int
     user_id: int
     timestamp: datetime
-
     model_config = {"from_attributes": True}
 
 
@@ -64,10 +66,10 @@ class PetrolStationSchema(BaseModel):
     latitude: float
     longitude: float
     price_per_litre: float
-    map_url: str = None  # will be computed
+    map_url: str = None  
 
     model_config = {
-        "from_attributes": True  # Pydantic v2 replacement for orm_mode
+        "from_attributes": True  
     }
 
     @model_validator(mode="after")

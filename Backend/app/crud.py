@@ -1,10 +1,31 @@
 from sqlalchemy.orm import Session
+from passlib.context import CryptContext
+from app import schemas
 from . import models
 import math
 
 # List all stations
 def get_stations(db: Session):
     return db.query(models.PetrolStation).all()
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def create_user(db: Session, user: schemas.UserCreate):
+    # Check if user already exists
+    existing_user = db.query(models.User).filter(models.User.email == user.email).first()
+    if existing_user:
+        raise ValueError("Email already registered")
+
+    hashed_password = pwd_context.hash(user.password)
+    db_user = models.User(email=user.email, hashed_password=hashed_password)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+# New function to get a user by email
+def get_user_by_email(db: Session, email: str):
+    return db.query(models.User).filter(models.User.email == email).first()
 
 
 # Find nearby stations using Haversine formula
