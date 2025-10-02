@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-gray-900">
+<div class="relative flex size-full min-h-screen flex-col bg-gray-900 group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-800 px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="w-8 h-8 rounded-full bg-[var(--primary-color)] flex items-center justify-center">
+<span class="material-symbols-outlined text-black"> navigation </span>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Navify</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+<a class="hover:text-white transition-colors" href="#">Home</a>
+<a class="text-white" href="#">Petrol Stations</a>
+<a class="hover:text-white transition-colors" href="#">Chatbot</a>
+<a class="hover:text-white transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-white">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAu2K6P0KBoy-63vbjRjVAIyvDuLrUsPazktNXqxnjGeJqubQgudh8VPh3vWJts_TX4XGi_CXn79jJ4DF8s4ieHC2MzZv92Zg4d5OLShXr2Cx5Io0Hb0Z7-3jBghaLxHDINvJZRjlCURcm7nDYumSylcjBrAyic-GraK-thTr5hFJhw_prXShYzrYY7F9QmTRDs9ivHJLoS_qq9LvZU7z2sgX394NHgDhWIJt6C8wgWPXonFGrBUjrUI0FOh9C0KovnfsAs-J1RMqcZ");'></div>
+</div>
+</div>
+</header>
+<main class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-4xl flex-1 gap-6">
+<div class="flex flex-col gap-4">
+<h1 class="text-3xl font-bold text-white">Find Petrol Stations</h1>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"> search </span>
+<input class="form-input w-full min-w-0 resize-none overflow-hidden rounded-full text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] border-gray-700 bg-gray-800 h-12 placeholder:text-gray-400 pl-12 pr-4 text-base" placeholder="Search by name or location..." value=""/>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors px-4 text-white text-sm font-medium">
+<span class="material-symbols-outlined text-lg">local_gas_station</span>
+<span>All Fuel Types</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors px-4 text-white text-sm font-medium">
+<span class="material-symbols-outlined text-lg">store</span>
+<span>All Brands</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors px-4 text-white text-sm font-medium">
+<span class="material-symbols-outlined text-lg">local_cafe</span>
+<span>Amenities</span>
+</button>
+</div>
+<div class="flex flex-col divide-y divide-gray-800 border-t border-b border-gray-800 rounded-xl overflow-hidden">
+<div class="flex items-center gap-4 hover:bg-gray-800/50 transition-colors px-4 py-3 cursor-pointer">
+<div class="text-white flex items-center justify-center rounded-lg bg-gray-800 shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">local_gas_station</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal">Fuel Up Station</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Open 24/7</p>
+</div>
+<div class="text-right">
+<p class="text-white font-semibold">1.2 mi</p>
+<p class="text-sm text-gray-400">Diesel, Unleaded</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 hover:bg-gray-800/50 transition-colors px-4 py-3 cursor-pointer">
+<div class="text-white flex items-center justify-center rounded-lg bg-gray-800 shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">local_gas_station</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal">Quick Fuel Stop</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Closes at 10 PM</p>
+</div>
+<div class="text-right">
+<p class="text-white font-semibold">2.5 mi</p>
+<p class="text-sm text-gray-400">Unleaded</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 hover:bg-gray-800/50 transition-colors px-4 py-3 cursor-pointer">
+<div class="text-white flex items-center justify-center rounded-lg bg-gray-800 shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">local_gas_station</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal">Express Gas</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Open 24/7</p>
+</div>
+<div class="text-right">
+<p class="text-white font-semibold">3.1 mi</p>
+<p class="text-sm text-gray-400">Diesel, Premium</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 hover:bg-gray-800/50 transition-colors px-4 py-3 cursor-pointer">
+<div class="text-white flex items-center justify-center rounded-lg bg-gray-800 shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">local_gas_station</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal">Energy Depot</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Open 24/7</p>
+</div>
+<div class="text-right">
+<p class="text-white font-semibold">4.8 mi</p>
+<p class="text-sm text-gray-400">All types</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 hover:bg-gray-800/50 transition-colors px-4 py-3 cursor-pointer">
+<div class="text-white flex items-center justify-center rounded-lg bg-gray-800 shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">local_gas_station</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal">Roadside Refuel</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Closes at 11 PM</p>
+</div>
+<div class="text-right">
+<p class="text-white font-semibold">5.3 mi</p>
+<p class="text-sm text-gray-400">Diesel, Unleaded</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

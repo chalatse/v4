@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Navify - Login</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-50: #f0fdf4;
+        --primary-100: #dcfce7;
+        --primary-200: #bbf7d0;
+        --primary-300: #86efac;
+        --primary-400: #4ade80;
+        --primary-500: #22c55e;
+        --primary-600: #16a34a;
+        --primary-700: #15803d;
+        --primary-800: #166534;
+        --primary-900: #14532d;
+        --primary-950: #052e16;
+      }
+      .bg-primary { background-color: var(--primary-500); }
+      .text-primary { color: var(--primary-500); }
+    </style>
+</head>
+<body class="bg-gray-900 font-sans">
+<div class="relative flex size-full min-h-screen flex-col bg-[#111714] dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex min-h-screen">
+<div class="flex flex-1 flex-col justify-center px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+<div class="mx-auto w-full max-w-sm lg:w-96">
+<div>
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Navify</h2>
+</div>
+<h2 class="mt-8 text-3xl font-bold leading-9 tracking-tight text-white">Sign in to your account</h2>
+<p class="mt-2 text-sm leading-6 text-gray-400">
+                Don't have an account?
+                <a class="font-semibold text-primary hover:text-primary-400" href="#">Start for free</a>
+</p>
+</div>
+<div class="mt-10">
+<div>
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="email">Email address</label>
+<div class="mt-2">
+<input autocomplete="email" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary-500 border border-[#3d5245] bg-[#1c2620] h-12 placeholder:text-[#9eb7a8] p-3 text-base font-normal leading-normal" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="password">Password</label>
+<div class="mt-2">
+<input autocomplete="current-password" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary-500 border border-[#3d5245] bg-[#1c2620] h-12 placeholder:text-[#9eb7a8] p-3 text-base font-normal leading-normal" id="password" name="password" placeholder="Enter your password" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-gray-600 bg-gray-700 text-primary focus:ring-primary" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-3 block text-sm leading-6 text-white" for="remember-me">Remember me</label>
+</div>
+<div class="text-sm">
+<a class="font-semibold text-primary hover:text-primary-400" href="#">Forgot password?</a>
+</div>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-full bg-primary px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500" type="submit">Sign in</button>
+</div>
+</form>
+</div>
+<div class="mt-6">
+<div class="relative">
+<div aria-hidden="true" class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-gray-700"></div>
+</div>
+<div class="relative flex justify-center text-sm font-medium leading-6">
+<span class="bg-[#111714] px-6 text-gray-400">Or continue with</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<a class="flex w-full items-center justify-center gap-3 rounded-full bg-[#29382f] px-3 py-2.5 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-900" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+</svg>
+<span class="text-sm font-semibold leading-6">Facebook</span>
+</a>
+<a class="flex w-full items-center justify-center gap-3 rounded-full bg-[#29382f] px-3 py-2.5 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-900" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+<path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+<span class="text-sm font-semibold leading-6">X</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative hidden w-0 flex-1 lg:block">
+<img alt="" class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAb7Le2Arrh9YFMBhbGQePEOVqiJODFEbpauW3gfoevxpcdGLhkk22fLWIlytn8hCDJD0r5jy4bLOQ-tf7a2TKW7XHVxgCSU8qtImwcbvdk2OI1Q8rKvGtSLqjw-P-WH3TYWxO3wp4tZ8Z5WkTo_0549c0bB7w7-oV4qCo284hKFoYNuFNMn2tdaH-Yne6r-Nfy1Fy9R1GY6zMWV_vylxjJzrdvuShuX80QEmZSPhwDhMBUO-hKCvdAqbo8xRXiC5seZgdnXD5UagL"/>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+<div class="absolute inset-0 flex items-center justify-center text-white">
+<div class="max-w-md text-center">
+<h1 class="text-4xl font-bold">Navigate Your World</h1>
+<p class="mt-4 text-lg text-gray-300">Petrol stations, real-time traffic, and a helpful chatbot. All in one app.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

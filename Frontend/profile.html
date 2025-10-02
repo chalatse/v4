@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Navify User Profile</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+      body {
+        font-family: 'Spline Sans', sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-[#111714] text-white">
+<div class="relative flex size-full min-h-screen flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-4">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold">Navify</h1>
+</div>
+<nav class="flex items-center gap-6 text-sm font-medium text-gray-300">
+<a class="hover:text-white" href="#">Map</a>
+<a class="hover:text-white" href="#">Chatbot</a>
+<a class="hover:text-white" href="#">Petrol Stations</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"> search </span>
+<input class="form-input w-full rounded-md border-none bg-[#29382f] py-2 pl-10 pr-4 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" placeholder="Search" type="search"/>
+</div>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDye9wbOqUOzLWnemzalZjjW4zKXiVaNvSL_9DMw4cOBVcKgBnafYPfvRcJ_yXvaqB2_IKY_JzVN3fhx_8CWmQJ9AltGXKaPPGqbCHSumlnGOU6ltMQht4VgMPAfvu2bUaPvarjDAXh4ve6nr61EQA2ewEXlPo0EZqC8ox__z8W3b6wh1y2d2MMf7g1up7fzNqi9beiYwvJrOrIbpm7bLpnzGdJCI4QyW6YNe5LSsPjcBo3gdpyr2-pXoOex3CAwObHK-FnPeahizq-");'></div>
+</div>
+</header>
+<main class="flex flex-1 gap-8 p-8">
+<aside class="flex w-80 flex-col gap-6 rounded-md bg-[#1a221d] p-6">
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="h-32 w-32 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTbYwHyu1DvPOMyJBSnR0PJ6mWutjiHPl2ycgA2S3EMiontlf9XyBPQejsIMbRPumGw6UEEkgFFrElJu1ih-txX02_7YYQ0qoE0XTgrK9SQz6wNbLonmXdIzwMFTTFCDM-Oq21p7n9BbB87hGdpJIm0a7Zxj_SSmu0ee57_t0_h1znUwXzE0UEa5WeN-xGnYpW6zZbhM7cxRnyJu-8eatTV1eod4e7a2l7HIKTUtVj3fyLTAuRVOHBtZZAc4f58lbPYQ8Vlb0VkLcR");'></div>
+<div>
+<h2 class="text-2xl font-bold">Sophia Carter</h2>
+<p class="text-sm text-[var(--primary-color)]">Premium User</p>
+</div>
+</div>
+<nav class="mt-4 flex flex-col gap-2">
+<a class="flex items-center gap-3 rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined text-gray-400"> person </span>
+<span>Edit Profile</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined text-gray-400"> settings </span>
+<span>App Preferences</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined text-gray-400"> notifications </span>
+<span>Notifications</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined text-gray-400"> map </span>
+<span>Map Display</span>
+</a>
+<a class="flex items-center justify-between rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400"> language </span>
+<span>Language</span>
+</div>
+<span class="text-sm text-gray-400">English</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-4 py-3 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined text-gray-400"> help </span>
+<span>Help &amp; Support</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-4 py-3 text-red-500 hover:bg-[#29382f]" href="#">
+<span class="material-symbols-outlined"> logout </span>
+<span>Logout</span>
+</a>
+</nav>
+</aside>
+<section class="flex-1 rounded-md bg-[#1a221d] p-6">
+<h2 class="text-3xl font-bold">My Favorites</h2>
+<div class="mt-6 flex flex-col gap-4">
+<div class="flex items-center gap-4 rounded-md bg-[#29382f] p-4">
+<div class="h-16 w-16 flex-shrink-0 rounded-md bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0NWKw-8L8779pHbmGqyI2T1zA7XmwcQdmDwY4QfliTLpDHFUEt2SdC7PAUcUYCzGFfbHV6Gu8uAknxaefZfACeeBG1lF41RcWUgkAHciI3CrpO_FHs_jET62e4wh8J92QJjVneLwY006scj1TvjOKdPGhusplKJNjCgb8keXbpMkzH_FnfSs7YVkOaFWdTLWEUaTj5HQwSJyvj-DmcRLeSa3aRC8TKb45vfREH6Fx8GJCuU3CGrFQ0uLempn55rTY5Gg7MPNagkmN");'></div>
+<div class="flex-1">
+<h3 class="font-semibold">Quick Fuel</h3>
+<p class="text-sm text-gray-400">123 Elm Street, Anytown</p>
+</div>
+<button class="text-gray-400 hover:text-white">
+<span class="material-symbols-outlined"> favorite </span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-md bg-[#29382f] p-4">
+<div class="h-16 w-16 flex-shrink-0 rounded-md bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOs0sWRJ0kr3JvZHwJwT7wg3rkbtFftREIWwS1ChIiVVugrKyB2z2c_AqAe4VAo9AcsP3eHxb4t0y9zEl2qYnvIved2f5OYuW--i7zU8Zq7wkaLC4TWcoT8aPx5VNsYiVtYBtow1oWWQWR1b5ux30cbmdChgut21vnOtMG447WNGlUvw8w7e9LHInTyN16FkjOVCtWGMaLAXanUsODYOhDWPWMWKXmdAnUX-UCjHgIlNJAffXqJwQV9jL3L1KOwmn9N8749fR7EvxS");'></div>
+<div class="flex-1">
+<h3 class="font-semibold">Speedy Gas</h3>
+<p class="text-sm text-gray-400">456 Oak Avenue, Anytown</p>
+</div>
+<button class="text-gray-400 hover:text-white">
+<span class="material-symbols-outlined"> favorite </span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-md bg-[#29382f] p-4">
+<div class="h-16 w-16 flex-shrink-0 rounded-md bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBq6ZFKwbHXCj7Twp1BkDq_EKABQrlNIIk1s8yUYxv_FCYNDgdmOW2cd8ZyjaPHGoDBjt3SN9KpkyV6JaeYqRe5VZGczL-IREQCufC5oGa15kq0yVkhu4YHORnYDJdAZtL_X11q9DD4dHI-ronHBgG4S3WQzOzIkmEslooq3DIQeZyZcMLrIxLe8cYeh8O9nwStdyCQI-9-EYMZadhLFv_4YpOQknR4pCPfS5IkePJn2cKxWpqz4LSRnoHxl8u1ozWMM9AljVcZdS71");'></div>
+<div class="flex-1">
+<h3 class="font-semibold">Eco Fuel</h3>
+<p class="text-sm text-gray-400">789 Pine Lane, Anytown</p>
+</div>
+<button class="text-gray-400 hover:text-white">
+<span class="material-symbols-outlined"> favorite </span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>
